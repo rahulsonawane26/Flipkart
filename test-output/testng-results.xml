@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33469" started-at="2020-06-21T18:50:25Z" finished-at="2020-06-21T18:50:59Z">
+  <suite name="Default suite" duration-ms="41092" started-at="2020-07-18T19:44:47Z" finished-at="2020-07-18T19:45:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33469" started-at="2020-06-21T18:50:25Z" finished-at="2020-06-21T18:50:59Z">
+    <test name="Default test" duration-ms="41092" started-at="2020-07-18T19:44:47Z" finished-at="2020-07-18T19:45:29Z">
       <class name="TestCases.FlipkartTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="18720" started-at="2020-06-21T18:50:25Z" finished-at="2020-06-21T18:50:44Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="19108" started-at="2020-07-18T19:44:47Z" finished-at="2020-07-18T19:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="login" duration-ms="13498" started-at="2020-06-21T18:50:44Z" finished-at="2020-06-21T18:50:58Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method status="PASS" signature="errorEmail()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="errorEmail" duration-ms="3684" started-at="2020-07-18T19:45:07Z" finished-at="2020-07-18T19:45:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorEmail -->
+        <test-method status="PASS" signature="errorMobile()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="errorMobile" duration-ms="6655" started-at="2020-07-18T19:45:10Z" finished-at="2020-07-18T19:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMobile -->
+        <test-method status="FAIL" signature="loginvalidationPassword()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="loginvalidationPassword" duration-ms="10602" started-at="2020-07-18T19:45:17Z" finished-at="2020-07-18T19:45:28Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Logout'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Logout']' is not a valid XPath expression.
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ZAtlA-']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8a1a470f18d26a7e674dbb74898fe969
-*** Element info: {Using=xpath, value=//div[contains(text(),'Logout']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f9be9af4a9bfff5a24e89650b5637ca5
+*** Element info: {Using=xpath, value=//span[@class='ZAtlA-']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[contains(text(),'Logout'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(text(),'Logout']' is not a valid XPath expression.
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ZAtlA-']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8a1a470f18d26a7e674dbb74898fe969
-*** Element info: {Using=xpath, value=//div[contains(text(),'Logout']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f9be9af4a9bfff5a24e89650b5637ca5
+*** Element info: {Using=xpath, value=//span[@class='ZAtlA-']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -50,8 +56,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at PageObject.LoginPage.logout(LoginPage.java:37)
-at TestCases.FlipkartTest.login(FlipkartTest.java:14)
+at PageObject.LoginPage.loginvalidationPassword(LoginPage.java:68)
+at TestCases.FlipkartTest.loginvalidationPassword(FlipkartTest.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -79,14 +85,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="cleanup" is-config="true" duration-ms="1163" started-at="2020-06-21T18:50:58Z" finished-at="2020-06-21T18:50:59Z">
+        </test-method> <!-- loginvalidationPassword -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="876" started-at="2020-07-18T19:45:28Z" finished-at="2020-07-18T19:45:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanup -->
+        </test-method> <!-- logout -->
       </class> <!-- TestCases.FlipkartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

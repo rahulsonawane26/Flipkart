@@ -5,9 +5,9 @@
     <classes>
       <class name="TestCases.FlipkartTest">
         <methods>
+          <include name="loginvalidationPassword"/>
+          <include name="logout"/>
           <include name="setup"/>
-          <include name="login"/>
-          <include name="cleanup"/>
         </methods>
       </class> <!-- TestCases.FlipkartTest -->
     </classes>
