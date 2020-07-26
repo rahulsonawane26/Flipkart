@@ -1,5 +1,6 @@
 package PageObject;
 
+import java.util.List;
 import java.util.Scanner;
 
 import org.openqa.selenium.By;
@@ -26,5 +27,18 @@ public class Homepage {
 		Thread.sleep(5000);
 	}
 
+	public void gettoplinks() throws InterruptedException {
+		
+		WebElement topDiv = driver.findElement(By.xpath("//div[@class='_3zdbog _3Ed3Ub']"));
+		List<WebElement> topDivLinks = topDiv.findElements(By.xpath("//li[contains(@class,'Wbt_B2 ')]"));
+		
+		for(int i=0; i<topDivLinks.size(); i++) {
+			
+			System.out.println(topDivLinks.get(i).getText());
+			
+		}
+	
+	}
+	
 	
 }

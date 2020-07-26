@@ -29,8 +29,16 @@ public class FlipkartTest extends CommonMethods {
 		assertTrue(price1.equals(price2));
 		
 	}
-*/
+	*/
 	@Test
+	public void listoflinksonhomepagetopdiv() throws InterruptedException {
+		
+		Homepage homepage = new Homepage();
+		homepage.gettoplinks();
+		
+	}
+
+	/*@Test
 	public void errorEmail() throws InterruptedException {
 		
 		LoginPage login = new LoginPage();
@@ -48,8 +56,7 @@ public class FlipkartTest extends CommonMethods {
 		String respoce = login.loginvalidationMobile("1231235");
 		Thread.sleep(3000);
 		String expectedError = "Please enter valid Email ID/Mobile number";
-		assertTrue((respoce.equals(expectedError)));
-		
+		assertTrue((respoce.equals(expectedError)));	
 	}
 	
 	@Test
@@ -61,5 +68,5 @@ public class FlipkartTest extends CommonMethods {
 		assertTrue(respoce.equals(expectedError));
 		
 	}
-	
+	*/
 }

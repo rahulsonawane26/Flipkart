@@ -30,6 +30,7 @@ public class LoginPage extends CommonMethods{
 		driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button")).click();
 	}
 	
+	
 	public void logout() throws InterruptedException {
 		
 		Thread.sleep(5000);
