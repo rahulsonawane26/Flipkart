@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41092" started-at="2020-07-18T19:44:47Z" finished-at="2020-07-18T19:45:29Z">
+  <suite name="Default suite" duration-ms="20682" started-at="2020-08-02T20:31:27Z" finished-at="2020-08-02T20:31:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41092" started-at="2020-07-18T19:44:47Z" finished-at="2020-07-18T19:45:29Z">
+    <test name="Default test" duration-ms="20682" started-at="2020-08-02T20:31:27Z" finished-at="2020-08-02T20:31:48Z">
       <class name="TestCases.FlipkartTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="19108" started-at="2020-07-18T19:44:47Z" finished-at="2020-07-18T19:45:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="19269" started-at="2020-08-02T20:31:27Z" finished-at="2020-08-02T20:31:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="errorEmail()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="errorEmail" duration-ms="3684" started-at="2020-07-18T19:45:07Z" finished-at="2020-07-18T19:45:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorEmail -->
-        <test-method status="PASS" signature="errorMobile()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="errorMobile" duration-ms="6655" started-at="2020-07-18T19:45:10Z" finished-at="2020-07-18T19:45:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorMobile -->
-        <test-method status="FAIL" signature="loginvalidationPassword()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="loginvalidationPassword" duration-ms="10602" started-at="2020-07-18T19:45:17Z" finished-at="2020-07-18T19:45:28Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="listoflinksonhomepagetopdiv()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="listoflinksonhomepagetopdiv" duration-ms="545" started-at="2020-08-02T20:31:47Z" finished-at="2020-08-02T20:31:47Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ZAtlA-']"}
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //ul[@class='_2OZ78M _1fj2FQ']) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//ul[@class='_2OZ78M _1fj2FQ'])' is not a valid XPath expression.
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f9be9af4a9bfff5a24e89650b5637ca5
-*** Element info: {Using=xpath, value=//span[@class='ZAtlA-']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 25fc583270359d8c6af63a1c4ffa451d
+*** Element info: {Using=xpath, value=//ul[@class='_2OZ78M _1fj2FQ'])}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ZAtlA-']"}
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //ul[@class='_2OZ78M _1fj2FQ']) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//ul[@class='_2OZ78M _1fj2FQ'])' is not a valid XPath expression.
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f9be9af4a9bfff5a24e89650b5637ca5
-*** Element info: {Using=xpath, value=//span[@class='ZAtlA-']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 25fc583270359d8c6af63a1c4ffa451d
+*** Element info: {Using=xpath, value=//ul[@class='_2OZ78M _1fj2FQ'])}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -52,12 +46,13 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at PageObject.LoginPage.loginvalidationPassword(LoginPage.java:68)
-at TestCases.FlipkartTest.loginvalidationPassword(FlipkartTest.java:58)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:204)
+at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:265)
+at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:177)
+at PageObject.Homepage.gettoplinks(Homepage.java:41)
+at TestCases.FlipkartTest.listoflinksonhomepagetopdiv(FlipkartTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -85,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginvalidationPassword -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="876" started-at="2020-07-18T19:45:28Z" finished-at="2020-07-18T19:45:29Z">
+        </test-method> <!-- listoflinksonhomepagetopdiv -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="839" started-at="2020-08-02T20:31:47Z" finished-at="2020-08-02T20:31:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->

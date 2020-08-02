@@ -23,7 +23,7 @@ public class FlipkartTest extends CommonMethods {
 		homepage.search("Apple Mobiles");
 		SearchResult search = new SearchResult();
 		search.price("50000");
-		BuyPage buypage = new BuyPage();
+		BuyPage buypage = new BuyPage(); 
 		String price1= buypage.checkproductprice();
 		String price2 = buypage.checkcartprice();
 		assertTrue(price1.equals(price2));
