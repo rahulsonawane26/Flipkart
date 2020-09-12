@@ -2,6 +2,7 @@ package TestCases;
 
 import static org.testng.Assert.assertTrue;
 
+import org.omg.PortableServer.ServantActivatorHelper;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ import PageObject.SearchResult;
 public class FlipkartTest extends CommonMethods {
 	
 
-/*	@Test
+	/*@Test
 	public void search() throws InterruptedException {
 		
 		login.logontoflipkart();
@@ -29,14 +30,14 @@ public class FlipkartTest extends CommonMethods {
 		assertTrue(price1.equals(price2));
 		
 	}
-	*/
+	
 	@Test
 	public void listoflinksonhomepagetopdiv() throws InterruptedException {
 		
 		Homepage homepage = new Homepage();
 		homepage.gettoplinks();
 		
-	}
+	}*/
 
 	/*@Test
 	public void errorEmail() throws InterruptedException {
@@ -69,4 +70,17 @@ public class FlipkartTest extends CommonMethods {
 		
 	}
 	*/
+	
+	@Test
+	public void compareList() throws InterruptedException {
+		
+		LoginPage login = new LoginPage();
+		login.logontoflipkart();
+		Thread.sleep(5000);
+		Homepage homepage = new Homepage();
+		homepage.search("selenium python");
+		SearchResult searchresult = new SearchResult();
+		searchresult.searchresultn();
+	}
+	
 }

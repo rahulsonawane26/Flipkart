@@ -31,4 +31,15 @@ public class SearchResult {
 		firstproductname.click();
 		
 	}
+	
+	public void searchresultn() throws InterruptedException {
+		
+		Thread.sleep(5000);
+		List<WebElement> one = driver.findElements(By.xpath("(//div[@class='_3O0U0u'])[1]"));
+		List<WebElement> two = driver.findElements(By.xpath("(//div[@class='_3O0U0u'])[2]"));
+		one.addAll(two);
+		System.out.println(one);
+		
+	}
+	
 }

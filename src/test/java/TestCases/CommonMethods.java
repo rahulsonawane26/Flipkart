@@ -27,7 +27,7 @@ public class CommonMethods {
 		// 2. Add similar path for Egde and Firefox
 		// 3. Read browser property path from property file
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Selenium\\Eclipse\\Flipkart\\src\\test\\resources\\chromedriver.exe");
+				"C:\\Selenium\\Drivers\\chromedriver_win32\\chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

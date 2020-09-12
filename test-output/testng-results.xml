@@ -1,90 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20682" started-at="2020-08-02T20:31:27Z" finished-at="2020-08-02T20:31:48Z">
+  <suite name="Default suite" duration-ms="32891" started-at="2020-09-12T11:22:55Z" finished-at="2020-09-12T11:23:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20682" started-at="2020-08-02T20:31:27Z" finished-at="2020-08-02T20:31:48Z">
+    <test name="Default test" duration-ms="32891" started-at="2020-09-12T11:22:55Z" finished-at="2020-09-12T11:23:28Z">
       <class name="TestCases.FlipkartTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="19269" started-at="2020-08-02T20:31:27Z" finished-at="2020-08-02T20:31:47Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="15498" started-at="2020-09-12T11:22:55Z" finished-at="2020-09-12T11:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="listoflinksonhomepagetopdiv()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="listoflinksonhomepagetopdiv" duration-ms="545" started-at="2020-08-02T20:31:47Z" finished-at="2020-08-02T20:31:47Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //ul[@class='_2OZ78M _1fj2FQ']) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//ul[@class='_2OZ78M _1fj2FQ'])' is not a valid XPath expression.
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 25fc583270359d8c6af63a1c4ffa451d
-*** Element info: {Using=xpath, value=//ul[@class='_2OZ78M _1fj2FQ'])}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //ul[@class='_2OZ78M _1fj2FQ']) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//ul[@class='_2OZ78M _1fj2FQ'])' is not a valid XPath expression.
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-LFPBBS7T', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rahul\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 25fc583270359d8c6af63a1c4ffa451d
-*** Element info: {Using=xpath, value=//ul[@class='_2OZ78M _1fj2FQ'])}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:204)
-at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:265)
-at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:177)
-at PageObject.Homepage.gettoplinks(Homepage.java:41)
-at TestCases.FlipkartTest.listoflinksonhomepagetopdiv(FlipkartTest.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method status="PASS" signature="compareList()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="compareList" duration-ms="16430" started-at="2020-09-12T11:23:11Z" finished-at="2020-09-12T11:23:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- listoflinksonhomepagetopdiv -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="839" started-at="2020-08-02T20:31:47Z" finished-at="2020-08-02T20:31:48Z">
+        </test-method> <!-- compareList -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="900" started-at="2020-09-12T11:23:27Z" finished-at="2020-09-12T11:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
