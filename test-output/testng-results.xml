@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32891" started-at="2020-09-12T11:22:55Z" finished-at="2020-09-12T11:23:28Z">
+  <suite name="Default suite" duration-ms="28566" started-at="2020-10-22T21:05:15Z" finished-at="2020-10-22T21:05:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32891" started-at="2020-09-12T11:22:55Z" finished-at="2020-09-12T11:23:28Z">
+    <test name="Default test" duration-ms="28566" started-at="2020-10-22T21:05:15Z" finished-at="2020-10-22T21:05:44Z">
       <class name="TestCases.FlipkartTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="15498" started-at="2020-09-12T11:22:55Z" finished-at="2020-09-12T11:23:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="setup" is-config="true" duration-ms="15348" started-at="2020-10-22T21:05:15Z" finished-at="2020-10-22T21:05:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="compareList()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="compareList" duration-ms="16430" started-at="2020-09-12T11:23:11Z" finished-at="2020-09-12T11:23:27Z">
+        <test-method status="PASS" signature="compareList()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="compareList" duration-ms="12295" started-at="2020-10-22T21:05:31Z" finished-at="2020-10-22T21:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareList -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="900" started-at="2020-09-12T11:23:27Z" finished-at="2020-09-12T11:23:28Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:TestCases.FlipkartTest@59fa1d9b]" name="logout" is-config="true" duration-ms="888" started-at="2020-10-22T21:05:43Z" finished-at="2020-10-22T21:05:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
