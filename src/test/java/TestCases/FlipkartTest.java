@@ -2,8 +2,13 @@ package TestCases;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import org.omg.PortableServer.ServantActivatorHelper;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -78,9 +83,20 @@ public class FlipkartTest extends CommonMethods {
 		login.logontoflipkart();
 		Thread.sleep(5000);
 		Homepage homepage = new Homepage();
-		homepage.search("selenium python");
-		SearchResult searchresult = new SearchResult();
-		searchresult.searchresultn();
+		homepage.search("iphone");
+		SearchResult search= new SearchResult();
+		HashMap<String, String> iphone = new HashMap<String, String>();
+		List<WebElement> name = search.phonename();
+		List<WebElement> price = search.phoneprice();
+		
+		for(int i=0; i<name.size();i++) {
+		
+			iphone.put(name.get(i).getText(), price.get(i).getText());
+				
+		}
+		
+		System.out.println(iphone);
+		iphone.get(0);
 	}
 	
 }
